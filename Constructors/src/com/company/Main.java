@@ -3,6 +3,18 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
+        //create a new class for a bank account
+//create fields for the account number, balance, customer name, email and phone number
+//
+//create getters and setters for each field ( So, a setter is a method that updates value of a variable. And a getter is a method that reads value of a variable.)
+//create two additional methods
+//1. To allow the customer to deposit funds (this should increment the balance field)
+//2. To allow the customer to withdraw funds. This should deduct from the balance field,
+//but not allow the withdrawal to complete if there are insuffucuent funds
+//You will want to create various code in the Main class (the one created by IntelliJ) to
+//confirm your code is working
+//add some System.out.println's in the two methods above as well.
+
 	    BankAccount travelingSavings = new BankAccount("12345", 9000000, "Jones Navela", "NavelaJones@gmail.com", "074 521 5647");
         System.out.println(travelingSavings.getCustomerName());
         System.out.println(travelingSavings.getCustomerEmail());
@@ -27,6 +39,15 @@ public class Main {
 
         System.out.println("*********************");
 
+        //Create a new class VipCustomer
+        // It should have 3 fields name, credit Limit, and email
+        // create 3 constructors
+        // 1st constructor empty should the constructor with 3 parameters with default values
+        // 2nd constructor should pass on the 2 values it receives and add a default value for the 3rd
+        // 3rd constructor should save all fields
+        // create getters only for this, using code generation of intelliJ as setters won't be needed
+        // test and confirm it works
+
         VipCustomer customer1 = new VipCustomer();
         System.out.println(customer1.getName());
 
@@ -38,14 +59,3 @@ public class Main {
     }
 }
 
-//create a new class for a bank account
-//create fields for the account number, balance, customer name, email and phone number
-//
-//create getters and setters for each field ( So, a setter is a method that updates value of a variable. And a getter is a method that reads value of a variable.)
-//create two additional methods
-//1. To allow the customer to deposit funds (this should increment the balance field)
-//2. To allow the customer to withdraw funds. This should deduct from the balance field,
-//but not allow the withdrawal to complete if there are insuffucuent funds
-//You will want to create various code in the Main class (the one created by IntelliJ) to
-//confirm your code is working
-//add some System.out.println's in the two methods above as well.
