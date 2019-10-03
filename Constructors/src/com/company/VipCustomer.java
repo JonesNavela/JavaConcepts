@@ -8,7 +8,6 @@ public class VipCustomer {
 
     public VipCustomer() {
         this("Default name", 50000,"Default@email.com");
-        System.out.println("Empty constructor called");
     }
 
     public VipCustomer(String name, double creditLimit) {
@@ -17,7 +16,6 @@ public class VipCustomer {
     }
 
     public VipCustomer(String name, double creditLimit, String email) {
-        System.out.println("Constructor with parameters called again");
         this.name = name;
         this.creditLimit = creditLimit;
         this.email = email;
