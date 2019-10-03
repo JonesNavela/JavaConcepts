@@ -27,9 +27,14 @@ public class Main {
 
         System.out.println("*********************");
 
-        VipCustomer goldenAccount = new VipCustomer();
+        VipCustomer customer1 = new VipCustomer();
+        System.out.println(customer1.getName());
 
-        goldenAccount.getName();
+        VipCustomer customer2 = new VipCustomer("Jakes", 25000.00);
+        System.out.println(customer2.getName());
+
+        VipCustomer customer3 = new VipCustomer("Josh", 100.00, "Josh@email.com");
+        System.out.println(customer3.getName());
     }
 }
 
