@@ -11,6 +11,7 @@ public class Main {
         Animal animal = new Animal("Animal", 1, 1, 5,5);
 
         Dog dog = new Dog("Rusty",10,8,2, 4, 1, 24, "fur");
+        dog.eat();
         System.out.println("My dog's name is : " + dog.getName() + " and he weighs " + dog.getWeight() + "KG ");
     }
 }
