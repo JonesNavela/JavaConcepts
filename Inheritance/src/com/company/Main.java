@@ -12,5 +12,6 @@ public class Main {
 
         Dog dog = new Dog("Rusty",10,8,2, 4, 1, 24, "fur");
         dog.eat();
+        dog.walk();
     }
 }
